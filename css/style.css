@@ -75,10 +75,16 @@ body {
 
 .row {
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .col {
-    flex-basis: calc(100% / 6);
+    flex-basis: calc((100% / 6) - 1rem);
+}
+
+
+.cards {
+    height: 100%;
 }
 
 .section-cards {
@@ -140,8 +146,16 @@ li a, a {
 }
 
 .box-img {
-    width: 150px;
-    height: 150px;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+}
+
+.album-img {
+    width: 100%;
+}
+
+.round-box {
+    border-radius: 50%;
 }
 
 .menu-icons, .fa-square-plus {
@@ -155,7 +169,18 @@ li a, a {
 
 /* testi +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 h2 {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+}
+
+h4 {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+.subtitle {
+    font-size: .8rem;
+    color: var(--bg-color-quintiary);
+    margin-bottom: 1.5rem;
 }
 
 .text-center {
