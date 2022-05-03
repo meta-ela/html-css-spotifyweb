@@ -7,7 +7,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    color: white;
+}
 
+:root {
+    --bg-color-primary: #141922;
+    --bg-color-secondary: #000000;
+    --bg-color-tertiary: #282828;
+    --bg-color-quartiary: #080b12;
+    --bg-color-quintiary: #808080;
+}
 
 
 .main-container {
@@ -27,7 +37,7 @@
 }
 
 .debug-content {
-    padding: 2rem;
+    padding: 1rem;
     border: 1px dashed red;
 }
 /* ++++++DEBUG++++++ */
@@ -74,7 +84,7 @@
 }
 
 .upgrade-bar {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     justify-content: flex-end;
 }
 
@@ -83,8 +93,38 @@
 }
 
 
+
+
+
 /*immagini e icone*/
 .box-img {
     width: 150px;
     height: 150px;
+}
+
+
+
+
+/* testi */
+.text-center {
+    text-align: center;
+}
+
+
+
+/*colori della pagina*/
+.bg-color-primary {
+    background-color: var(--bg-color-primary);
+}
+
+.bg-color-secondary {
+    background-color: var(--bg-color-secondary);
+}
+
+.bg-color-tertiary {
+    background-color: var(--bg-color-tertiary);
+}
+
+.bg-color-quartiary {
+    background-color: var(--bg-color-quartiary);
 }
