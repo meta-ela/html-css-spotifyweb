@@ -58,6 +58,13 @@
     overflow: auto;
 }
 
+.row {
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc(100% / 6);
+}
 
 
 .sidebar {
@@ -71,4 +78,11 @@
 
 .link-menu {
     display: inline-block;
+}
+
+
+/*immagini e icone*/
+.box-img {
+    width: 150px;
+    height: 150px;
 }
