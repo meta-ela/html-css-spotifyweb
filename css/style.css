@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -17,6 +20,18 @@
 }
 
 
+/* ++++++DEBUG++++++ */
+.debug {
+    border: 1px dashed blue;
+}
+
+.debug-content {
+    padding: 2rem;
+    border: 1px dashed red;
+}
+/* ++++++DEBUG++++++ */
+
+
 
 .flex {
     display: flex;
@@ -24,6 +39,7 @@
 
 .flex-grow {
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .flex-shrink {
@@ -38,6 +54,10 @@
     flex-direction: column;
 }
 
+.overflow-auto {
+    overflow: auto;
+}
+
 
 
 .sidebar {
@@ -49,3 +69,6 @@
     padding: 2rem 0rem;
 }
 
+.link-menu {
+    display: inline-block;
+}

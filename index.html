@@ -18,21 +18,75 @@
         <div class="flex flex-grow align-stretch">
 
             <!-- sidebar (statico e shrink) -->
-            <div class="sidebar flex flex-shrink"></div>
+            <div class="debug sidebar flex flex-shrink">
+                <!-- contenitore logo -->
+                <div class="logo debug-content">logo</div>
+                <!-- menu principale (a scomparsa in mobile) -->
+                <div class="main-menu debug-content">
+                    <ul>
+                        <li class="debug"><a href="">Home</a></li>
+                        <li class="debug"><a href="">Cerca</a></li>
+                        <li class="debug"><a href="">La tua libreria</a></li>
+                    </ul>
+                </div>
+                <!-- contenitore playlist -->
+                <div class="flex flex-column flex-grow">
+                    <!-- playlist principale -->
+                    <div class="debug-content">
+                        <h3>Playlist</h3>
+                        <div>(ICONA) Crea Playlist</div>
+                    </div>
+                    <!-- lista playlist (flex-grow e overflow per scorrimento) -->
+                    <div class="debug-content flex-grow overflow-auto">
+                        <div>
+                            <ul>
+                                <li class="debug"><a href="">Nome Playlist</a></li>
+                                <li class="debug"><a href="">Nome Playlist</a></li>
+                                <li class="debug"><a href="">Nome Playlist</a></li>
+                                <li class="debug"><a href="">Nome Playlist</a></li>
+                                <li class="debug"><a href="">Nome Playlist</a></li>
+                                <li class="debug"><a href="">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="debug">
+                    <div>
+                        (ICONA) Installa app
+                    </div>
+                    <hr>
+                    <div>
+                        (ICONA) John Doe
+                    </div>
+                </div>
+            </div>
 
             <!-- contenitore contenuto pagina -->
-            <div class="flex flex-grow flex-column">
+            <div class="debug flex flex-grow flex-column">
 
                 <!-- barra superiore per "Upgrade" -->
-                <div class="upgrade-bar flex-shrink"></div>
+                <div class="debug upgrade-bar flex-shrink">
+                    <button>Upgrade</button>
+                </div>
 
-                <!-- contenuto in owerflow per scorrimento -->
-                <div class="flex-grow "></div>
+                <!-- contenuto in overflow per scorrimento -->
+                <div class="debug flex-grow overflow-auto">
+                    <!-- link collegamenti scelte -->
+                    <div>
+                        <div class="link-menu"><a href="">IN EVIDENZA</a></div>
+                        <div class="link-menu"><a href="">PODCAST</a></div>
+                        <div class="link-menu"><a href="">CLASSIFICHE</a></div>
+                        <div class="link-menu"><a href="">GENERI E MOOD</a></div>
+                        <div class="link-menu"><a href="">NUOVE USCITE</a></div>
+                        <div class="link-menu"><a href="">SCOPRI</a></div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- nav bar menu play (shrink) -->
-        <div class="player-container"></div>
+        <div class="debug player-container"></div>
     </div>
 
 </body>
