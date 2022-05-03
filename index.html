@@ -9,7 +9,32 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- contenitore globale con 100vh -->
+    <div class="main-container flex flex-column">
+
+        <!-- blocco (grow e stretch, forza la nav bar in fondo) -->
+        <div class="flex flex-grow align-stretch">
+
+            <!-- sidebar (statico e shrink) -->
+            <div class="sidebar flex flex-shrink"></div>
+
+            <!-- contenitore contenuto pagina -->
+            <div class="flex flex-grow flex-column">
+
+                <!-- barra superiore per "Upgrade" -->
+                <div class="upgrade-bar flex-shrink"></div>
+
+                <!-- contenuto in owerflow per scorrimento -->
+                <div class="flex-grow "></div>
+            </div>
+        </div>
+
+        <!-- nav bar menu play (shrink) -->
+        <div class="player-container"></div>
+    </div>
+
 </body>
+
 </html>

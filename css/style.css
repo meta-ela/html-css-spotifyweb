@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+.main-container {
+    height: 100vh;
+}
+
+.player-container {
+    flex-shrink: 0;
+    padding: 2rem 0rem;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+
+.sidebar {
+    width: 200px;
+    flex-direction: column;
+}
+
+.upgrade-bar {
+    padding: 2rem 0rem;
+}
+
