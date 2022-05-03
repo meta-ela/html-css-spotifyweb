@@ -96,6 +96,7 @@ body {
     width: 200px;
     flex-direction: column;
     flex-shrink: 0;
+    padding: 1rem;
 }
 
 .upgrade-bar {
@@ -111,13 +112,12 @@ body {
 }
 
 .main-menu {
-    padding-left: 1rem;
     padding-bottom: 1rem;
 }
 
 ul li {
     list-style-type: none;
-    padding: .3rem 0rem;
+    padding: .5rem 0rem;
 }
 
 li a, a {
@@ -126,8 +126,16 @@ li a, a {
     vertical-align: middle;
 }
 
+.download {
+    border-bottom: 1px solid var(--bg-color-quintiary);
+    margin-bottom: 1rem;
+    padding: 1rem 0rem;
+}
 
-
+.user {
+    align-items: center;
+    gap: 1rem;
+}
 
 /*immagini, bottoni e icone ++++++++++++++++++++++++++++++++++++++++++*/
 .btn {
@@ -142,7 +150,8 @@ li a, a {
 }
 
 .logo {
-    padding: 1rem;
+    width: 150px;
+    padding: .5rem 0rem;
 }
 
 .box-img {
@@ -154,25 +163,45 @@ li a, a {
     width: 100%;
 }
 
-.round-box {
+/* .round-box {
     border-radius: 50%;
-}
+    background-color: red;
+    
+} */
 
-.menu-icons, .fa-square-plus {
+.menu-icons {
     width: 30px;
     vertical-align: middle;
     fill: var(--bg-color-quintiary);
 }
 
+.fa-square-plus {
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
 
+.small-icon {
+    width: 20px;
+    vertical-align: bottom;
+}
 
+.user-avatar {
+    background-color: var(--bg-color-quintiary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* testi +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 h2 {
     margin-bottom: .5rem;
 }
 
-h4 {
+h4, h3 {
     margin-bottom: .5rem;
     font-size: .9rem;
 }
