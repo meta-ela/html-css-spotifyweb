@@ -16,7 +16,8 @@
 
 .player-container {
     flex-shrink: 0;
-    padding: 2rem 0rem;
+    padding: .5rem 0rem;
+    justify-content: space-between;
 }
 
 
@@ -74,6 +75,7 @@
 
 .upgrade-bar {
     padding: 2rem 0rem;
+    justify-content: flex-end;
 }
 
 .link-menu {
