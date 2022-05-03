@@ -17,9 +17,27 @@ body {
     --bg-color-tertiary: #282828;
     --bg-color-quartiary: #080b12;
     --bg-color-quintiary: #808080;
+
+    --padding-left-sm: 1rem;
 }
 
 
+
+/* ++++++DEBUG++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.debug {
+    border: 1px dashed blue;
+}
+
+.debug-content {
+    padding: 1rem;
+    border: 1px dashed red;
+}
+/* ++++++DEBUG++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .main-container {
     height: 100vh;
 }
@@ -29,20 +47,6 @@ body {
     padding: .5rem 0rem;
     justify-content: space-between;
 }
-
-
-/* ++++++DEBUG++++++ */
-.debug {
-    border: 1px dashed blue;
-}
-
-.debug-content {
-    padding: 1rem;
-    border: 1px dashed red;
-}
-/* ++++++DEBUG++++++ */
-
-
 
 .flex {
     display: flex;
@@ -77,42 +81,90 @@ body {
     flex-basis: calc(100% / 6);
 }
 
+.section-cards {
+    padding: 1rem;
+}
+
 
 .sidebar {
     width: 200px;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .upgrade-bar {
-    padding: 1rem 0rem;
+    padding: 1rem .5rem;
     justify-content: flex-end;
+    background-color: var(--bg-color-quartiary);
 }
 
 .link-menu {
     display: inline-block;
+    padding: 1rem;
+    font-size: .7rem;
+}
+
+.main-menu {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+    padding: .3rem 0rem;
+}
+
+li a, a {
+    text-decoration: none;
+    color: var(--bg-color-quintiary);
+    vertical-align: middle;
 }
 
 
 
 
+/*immagini, bottoni e icone ++++++++++++++++++++++++++++++++++++++++++*/
+.btn {
+    color: white;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+    font-size: .7rem;
+}
 
-/*immagini e icone*/
+.logo {
+    padding: 1rem;
+}
+
 .box-img {
     width: 150px;
     height: 150px;
 }
 
+.menu-icons, .fa-square-plus {
+    width: 30px;
+    vertical-align: middle;
+    fill: var(--bg-color-quintiary);
+}
 
 
 
-/* testi */
+
+/* testi +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+h2 {
+    margin-bottom: 1rem;
+}
+
 .text-center {
     text-align: center;
 }
 
 
 
-/*colori della pagina*/
+/*classi per variabili della pagina ++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .bg-color-primary {
     background-color: var(--bg-color-primary);
 }
@@ -127,4 +179,8 @@ body {
 
 .bg-color-quartiary {
     background-color: var(--bg-color-quartiary);
+}
+
+.padding-left-sm {
+    padding-left: var(--padding-left-sm);
 }
