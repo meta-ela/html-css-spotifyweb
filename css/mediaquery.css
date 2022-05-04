@@ -35,6 +35,22 @@
     .bar-sm {
         max-width: 300px;
     }
+
+    .volume-box {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    .played-song {
+        gap: 0.5rem;
+    }
+
+    .played-song-album {
+        width: 40px;
+    }
 }
 
 
@@ -62,11 +78,23 @@
     }
 
     .played-song-album {
-        width: 40px;
+        width: 30px;
     }
     
-    
+    .play-bar {
+        margin: 0rem .5rem;
+    }
 
+}
+
+@media screen and (max-width: 450px) {
+    .volume-items {
+        flex-direction: column;
+    }
+
+    .played-song-name {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -81,4 +109,5 @@
     .sidebar-mobile {
         display: flex;
     }
+
 }

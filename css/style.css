@@ -166,7 +166,7 @@ li a, a {
 .bar {
     max-width: 500px;
     width: 100%;
-    margin: 0rem 1.5rem;
+    margin: 0rem .5rem;
 }
 
 .play-bar {
@@ -174,10 +174,7 @@ li a, a {
     height: 4px;
     background-color: #585555;
     border-radius: 20px;
-}
-
-.marign-left-right {
-    margin: 0rem 1.5rem;
+    margin: 0rem .5rem;
 }
 
 .song-bar {
@@ -297,8 +294,9 @@ li a, a {
 }
 
 .play-icons {
-    display: inline-block;
-    padding: 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .play-box {
