@@ -154,17 +154,19 @@ li a, a {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    max-width: 250px;
+    margin-left: .5rem;
+    flex-shrink: 0;
 }
 
 .played-song-name {
     flex-direction: column;
-    
 }
 
 .bar {
     max-width: 500px;
     width: 100%;
+    margin: 0rem 1.5rem;
 }
 
 .play-bar {
