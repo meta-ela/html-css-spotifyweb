@@ -43,6 +43,7 @@ body {
 }
 
 .player-container {
+    height: 80px;
     flex-shrink: 0;
     padding: .5rem 0rem;
     justify-content: space-between;
@@ -93,7 +94,7 @@ body {
 
 
 .sidebar {
-    width: 200px;
+    width: 250px;
     flex-direction: column;
     flex-shrink: 0;
     padding: 1rem;
@@ -137,6 +138,18 @@ li a, a {
     gap: 1rem;
 }
 
+.played-song {
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.played-song-name {
+    flex-direction: column;
+    
+}
+
+
 /*immagini, bottoni e icone ++++++++++++++++++++++++++++++++++++++++++*/
 .btn {
     color: white;
@@ -163,6 +176,10 @@ li a, a {
     width: 100%;
 }
 
+.played-song-album {
+    width: 50px;
+}
+
 /* .round-box {
     border-radius: 50%;
     background-color: red;
@@ -186,6 +203,37 @@ li a, a {
     vertical-align: bottom;
 }
 
+.xs-icon {
+    width: 15px;
+    color: var(--bg-color-quintiary);
+    
+}
+
+.played-song-icon {
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.play-bar-icon {
+    width: 15px;
+    color: white;
+}
+
+.play-icons {
+    display: inline-block;
+    padding: 0rem 1rem;
+}
+
+.play-box {
+    border: 3px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
 .user-avatar {
     background-color: var(--bg-color-quintiary);
     width: 30px;
@@ -195,6 +243,9 @@ li a, a {
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 /* testi +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 h2 {
@@ -207,9 +258,12 @@ h4, h3 {
 }
 
 .subtitle {
+    margin-bottom: 1.5rem;
+}
+
+.song-name, .subtitle {
     font-size: .8rem;
     color: var(--bg-color-quintiary);
-    margin-bottom: 1.5rem;
 }
 
 .text-center {
