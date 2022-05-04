@@ -23,21 +23,7 @@ body {
 
 
 
-/* ++++++DEBUG++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.debug {
-    border: 1px dashed blue;
-}
-
-.debug-content {
-    padding: 1rem;
-    border: 1px dashed red;
-}
-/* ++++++DEBUG++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* container +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .main-container {
     height: 100vh;
 }
@@ -45,10 +31,15 @@ body {
 .player-container {
     height: 80px;
     flex-shrink: 0;
-    padding: .5rem 0rem;
+    padding: 1rem 0rem;
     justify-content: space-between;
 }
 
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .flex {
     display: flex;
 }
@@ -59,7 +50,7 @@ body {
 }
 
 .flex-shrink {
-    flex-shrink: 1;
+    flex-shrink: 0;
 }
 
 .align-stretch {
@@ -68,6 +59,10 @@ body {
 
 .flex-column {
     flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .overflow-auto {
@@ -84,6 +79,10 @@ body {
 }
 
 
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .cards {
     height: 100%;
 }
@@ -92,18 +91,27 @@ body {
     padding: 1rem;
 }
 
-
 .sidebar {
     width: 250px;
+}
+
+.sidebar, .sidebar-mobile {
     flex-direction: column;
     flex-shrink: 0;
-    padding: 1rem;
+    padding: .5rem;
 }
+
+.sidebar-mobile {
+    width: 60px;
+    display: none;
+}
+
 
 .upgrade-bar {
     padding: 1rem .5rem;
     justify-content: flex-end;
     background-color: var(--bg-color-quartiary);
+    height: 80px;
 }
 
 .link-menu {
@@ -133,6 +141,10 @@ li a, a {
     padding: 1rem 0rem;
 }
 
+.download-mobile {
+    margin-bottom: 1rem;
+}
+
 .user {
     align-items: center;
     gap: 1rem;
@@ -142,6 +154,7 @@ li a, a {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    width: 250px;
 }
 
 .played-song-name {
@@ -217,7 +230,15 @@ li a, a {
 }
 
 .logo {
-    width: 150px;
+    width: 140px;
+}
+
+.logo-xs {
+    width: 40px;
+}
+
+.logo, .logo-xs {
+    height: 65px;
     padding: .5rem 0rem;
 }
 
@@ -253,13 +274,13 @@ li a, a {
 }
 
 .small-icon {
-    width: 20px;
+    width: 25px;
     vertical-align: bottom;
 }
 
 .xs-icon {
     width: 15px;
-    color: white);
+    color: white;
 }
 
 .played-song-icon {
@@ -295,6 +316,7 @@ li a, a {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 

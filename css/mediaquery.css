@@ -2,8 +2,39 @@
     
 }
 
+@media screen and (max-width: 900px) {
+    .col-md {
+        flex-basis: calc((100% / 4) - 1rem);
+    }
+}
+
 @media screen and (max-width: 700px) {
-    .col {
-        
+    .col-sm {
+        flex-basis: calc((100% / 2) - 1rem);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-sm {
+        flex-basis: calc((100% / 2) - 1rem);
+    }
+
+    .sidebar-sm {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .col-sm {
+        flex-basis: calc((100% / 2) - 1rem);
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .sidebar-mobile {
+        display: flex;
     }
 }

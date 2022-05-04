@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
 </head>
 
 <body>
@@ -18,13 +19,13 @@
         <div class="flex flex-grow align-stretch">
 
             <!-- sidebar (statico e shrink) -->
-            <div class="sidebar flex bg-color-secondary">
+            <div class="sidebar flex bg-color-secondary sidebar-sm display-none ">
                 <!-- contenitore logo -->
                 <div class="logo">
                     <img src="img/logo.svg" alt="Spotify Logo">
                 </div>
                 <!-- menu principale (a scomparsa in mobile) -->
-                <div class="main-menu">
+                <div class="main-menu display-none">
                     <ul>
                         <li>
                             <a href="">
@@ -91,6 +92,52 @@
                 </div>
             </div>
 
+            <!-- sidebar xs in display none, compare solo sotto 500px di media query -->
+            <div class="sidebar-mobile flex bg-color-secondary sidebar-xs space-between">
+                <div class="flex flex-column">
+                    <!-- contenitore logo -->
+                    <div class="logo-xs">
+                        <img src="img/logo-small.svg" alt="Spotify Logo">
+                    </div>
+                    <!-- menu principale (a scomparsa in mobile) -->
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="menu-icons"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""> 
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="menu-icons"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill-rule="evenodd"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="menu-icons"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- contenitore playlist scompare in modalità mobile -->
+                
+                <!-- User -->
+                <div class="flex flex-column">
+                    <div class="download-mobile">
+                        <a href="">
+                            <img class="small-icon" src="img/download.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="user flex">
+                        <div class="user-avatar">
+                            <img class="small-icon" src="img/profile.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- contenitore contenuto pagina -->
             <div class="flex flex-grow flex-column">
 
@@ -117,7 +164,7 @@
                             <p class="subtitle" ></p>
                         </div>
                         <div class="row flex">
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/metal_lifting.jpg" alt="">
@@ -129,7 +176,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/stranger.jpeg" alt="">
@@ -141,7 +188,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/aquietplace.jpeg" alt="">
@@ -153,7 +200,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/split.jpeg" alt="">
@@ -165,7 +212,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/cure.jpeg" alt="">
@@ -177,7 +224,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/sinister.jpeg" alt="">
@@ -198,7 +245,7 @@
                             <p class="subtitle" >Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
                         <div class="row flex">
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/radar.jpeg" alt="">
@@ -209,7 +256,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img">
                                         <img class="album-img" src="img/mixdaily.jpeg" alt="">
@@ -229,7 +276,7 @@
                             <p class="subtitle" >Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
                         <div class="row flex">
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img round-box">
                                         <img class="album-img" src="img/youg.jpeg" alt="">
@@ -240,7 +287,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col col-md col-sm">
                                 <div class="cards">
                                     <div class="box-img round-box">
                                         <img class="album-img" src="img/einaudi.jpeg" alt="">
@@ -259,8 +306,8 @@
         <!-- nav bar menu play (shrink) -->
         <div class="flex player-container bg-color-tertiary">
             <!-- blocco titolo brano in riproduzone -->
-            <div class="flex played-song">
-                <div class="played-song-album">
+            <div class="flex played-song flex-shrink">
+                <div class="played-song-album flex">
                     <img class="album-img" src="img/sinister.jpeg" alt="">
                 </div>
                 <div class="flex played-song-name">
