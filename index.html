@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
@@ -149,13 +150,41 @@
                 <!-- contenuto in overflow per scorrimento -->
                 <div class="flex-grow overflow-auto bg-color-primary">
                     <!-- link collegamenti scelte -->
-                    <div class=" text-center">
+                    <div class="flex link">
+                        <!-- div con prova active bar green -->
+                        <div class="flex flex-column align-center">
+                            <a class="link-menu" href="">IN EVIDENZA</a>
+                            <div class="active-bar"></div>
+                        </div>
+                        <div class="flex flex-column align-center">
+                            <a class="link-menu" href="">PODCAST</a>
+                            <div class="active-bar"></div>
+                        </div>
+                        <div class="flex flex-column align-center">
+                            <a class="link-menu" href="">CLASSIFICHE</a>
+                            <div class="active-bar"></div>
+                        </div>
+                        <div class="flex flex-column align-center">
+                            <a class="link-menu" href="">GENERI E MOOD</a>
+                            <div class="active-bar"></div>
+                        </div>
+                        <div class="flex flex-column align-center">
+                            <a class="link-menu" href="">NUOVE USCITE</a>
+                            <div class="active-bar"></div>
+                        </div>
+                        <div class="flex flex-column align-center">
+                            <a class="link-menu" href="">SCOPRI</a>
+                            <div class="active-bar"></div>
+                        </div>
+
+                        <!-- link standard
                         <a class="link-menu" href="">IN EVIDENZA</a>
                         <a class="link-menu" href="">PODCAST</a>
                         <a class="link-menu" href="">CLASSIFICHE</a>
                         <a class="link-menu" href="">GENERI E MOOD</a>
                         <a class="link-menu" href="">NUOVE USCITE</a>
-                        <a class="link-menu" href="">SCOPRI</a>
+                        <a class="link-menu" href="">SCOPRI</a> 
+                        -->
                     </div>
                     <!-- prima sezione contenuto -->
                     <div class="section-cards">
@@ -278,8 +307,8 @@
                         <div class="row flex">
                             <div class="col col-md col-sm">
                                 <div class="cards">
-                                    <div class="box-img round-box">
-                                        <img class="album-img" src="img/youg.jpeg" alt="">
+                                    <div class="box-img">
+                                        <img class="album-img round-img" src="img/youg.jpeg" alt="">
                                     </div>
                                     <div class="text-center">
                                         <h4>Lana del Rey</h4>
@@ -289,8 +318,8 @@
 
                             <div class="col col-md col-sm">
                                 <div class="cards">
-                                    <div class="box-img round-box">
-                                        <img class="album-img" src="img/einaudi.jpeg" alt="">
+                                    <div class="box-img">
+                                        <img class="album-img round-img" src="img/einaudi.jpeg" alt="">
                                     </div>
                                     <div class="text-center">
                                         <h4>Ludovico Einaudi</h4>
@@ -327,7 +356,7 @@
             <!-- blocco con play e barra di riproduzione -->
             <div class="bar bar-md bar-sm">
                 <div>
-                    <div class="flex play-icons text-center">
+                    <div class="flex play-icons">
                         <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="play-bar-icon"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M424.1 287c-15.13-15.12-40.1-4.426-40.1 16.97V352H336L153.6 108.8C147.6 100.8 138.1 96 128 96H32C14.31 96 0 110.3 0 128s14.31 32 32 32h80l182.4 243.2C300.4 411.3 309.9 416 320 416h63.97v47.94c0 21.39 25.86 32.12 40.99 17l79.1-79.98c9.387-9.387 9.387-24.59 0-33.97L424.1 287zM336 160h47.97v48.03c0 21.39 25.87 32.09 40.1 16.97l79.1-79.98c9.387-9.391 9.385-24.59-.0013-33.97l-79.1-79.98c-15.13-15.12-40.99-4.391-40.99 17V96H320c-10.06 0-19.56 4.75-25.59 12.81L254 162.7L293.1 216L336 160zM112 352H32c-17.69 0-32 14.31-32 32s14.31 32 32 32h96c10.06 0 19.56-4.75 25.59-12.81l40.4-53.87L154 296L112 352z"/></svg>
                         </a>

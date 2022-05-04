@@ -1,0 +1,13 @@
+.btn:hover {
+    transform: scale(1);
+}
+
+.active-bar:focus {
+    background-color: green;
+    color: green;
+    
+}
+
+.link-menu:hover, a:hover {
+    color: white;
+}
