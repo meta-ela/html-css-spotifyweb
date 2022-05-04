@@ -149,6 +149,60 @@ li a, a {
     
 }
 
+.bar {
+    max-width: 500px;
+    width: 100%;
+}
+
+.play-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #585555;
+    border-radius: 20px;
+}
+
+.marign-left-right {
+    margin: 0rem 1.5rem;
+}
+
+.song-bar {
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.play-time {
+    width: 30%;
+    height: 100%;
+    background-color: var(--bg-color-quintiary);
+}
+
+.volume-box {
+    max-width: 200px;
+    width: 100%;
+}
+
+.volume-items {
+    gap: .5rem;
+}
+
+.volume-bar {
+    width: 100%;
+    padding: 0rem .5rem;
+}
+
+.volume-items, .volume-bar {
+    justify-content: center;
+    align-items: center;
+}
+
+.white-color {
+    color: var(--bg-color-quintiary);
+}
+
+
+
+
 
 /*immagini, bottoni e icone ++++++++++++++++++++++++++++++++++++++++++*/
 .btn {
@@ -205,8 +259,7 @@ li a, a {
 
 .xs-icon {
     width: 15px;
-    color: var(--bg-color-quintiary);
-    
+    color: white);
 }
 
 .played-song-icon {
@@ -264,6 +317,10 @@ h4, h3 {
 .song-name, .subtitle {
     font-size: .8rem;
     color: var(--bg-color-quintiary);
+}
+
+.song-time {
+    font-size: .7rem;
 }
 
 .text-center {
