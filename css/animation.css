@@ -2,11 +2,8 @@
     transform: scale(1);
 }
 
-.link-menu:hover .active-bar:hover {
-    background-color: green;
-}
 
-.play-time:hover {
+.song-bar:hover .play-time, .volume-bar:hover .play-time {
     background-color: green;
 }
 

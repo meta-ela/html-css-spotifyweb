@@ -220,12 +220,13 @@ li a, a {
     color: var(--bg-color-quintiary);
 }
 
-
 .active-bar {
     width: 40px;
     height: 2px;
-    /* background-color: green;
-    display: none; */
+}
+
+.active-box:hover .active-bar {
+    background-color: green;
 }
 
 .box-img {
@@ -243,7 +244,6 @@ li a, a {
 .cards .box-hover {
     display: none;
 }
-
 
 
 
