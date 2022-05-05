@@ -77,8 +77,16 @@
 
 /* si restringono contentuti barra player */
 @media screen and (max-width: 450px) {
+    .volume-box {
+        width: 50px;
+    }
+
     .volume-items {
         flex-direction: column;
+    }
+
+    .volume-bar {
+        display: none;
     }
 
     .played-song-name {
@@ -89,7 +97,7 @@
 
 /* sezione principlae ad 1 colonna per riga, scompare il testo artista
 in riproduzione nella barrra player */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     .col-sm {
         flex-basis: 100%;
     }
