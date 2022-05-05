@@ -1,7 +1,7 @@
 /* sezione principale a 4 colonne per riga */
 @media screen and (max-width: 1100px) {
     .col-md {
-        flex-basis: calc((100% / 4) - 1rem);
+        flex-basis: calc(100% / 4 - ((1rem / 4) * 3));
     }
 
     .bar-md {

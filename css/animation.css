@@ -2,12 +2,45 @@
     transform: scale(1);
 }
 
-.active-bar:focus {
+.link-menu:hover .active-bar:hover {
     background-color: green;
-    color: green;
-    
 }
+
+.play-time:hover {
+    background-color: green;
+}
+
 
 .link-menu:hover, a:hover {
     color: white;
+}
+
+.cards:hover .box-hover {
+    display: block;
+}
+
+
+
+/* animazioni per icone */
+.play-bar-icon:hover {
+    transform: scale(1.1);
+}
+
+.fa-heart:hover, .fa-folder:hover {
+    color: white;
+}
+
+.fa-heart:active, .fa-folder:active {
+    color: green;
+}
+
+
+
+/* animazioni per testi */
+.played-song-name:hover {
+    text-decoration: underline;
+}
+
+h4:hover, div.subtitle:hover {
+    text-decoration: underline;
 }
