@@ -1,3 +1,4 @@
+/* sezione principale a 4 colonne per riga */
 @media screen and (max-width: 1100px) {
     .col-md {
         flex-basis: calc((100% / 4) - 1rem);
@@ -9,7 +10,8 @@
 }
 
 
-@media screen and (max-width: 750px) {
+/* sezione principale a 2 colonne per riga  */
+@media screen and (max-width: 700px) {
     .col-sm {
         flex-basis: calc((100% / 2) - 1rem);
     }
@@ -37,20 +39,9 @@
     }
 }
 
+
+/* layout sidebar laterale xs */
 @media screen and (max-width: 600px) {
-    
-
-    .played-song {
-        gap: 0.5rem;
-    }
-
-    .played-song-album {
-        width: 40px;
-    }
-}
-
-
-@media screen and (max-width: 500px) {
     .col-sm {
         flex-basis: calc((100% / 2) - 1rem);
     }
@@ -64,6 +55,7 @@
     }
 
     .played-song {
+        gap: 0.5rem;
         flex-shrink: 1;
     }
 
@@ -80,9 +72,10 @@
     .play-bar {
         margin: 0rem .5rem;
     }
-
 }
 
+
+/* si restringono contentuti barra player */
 @media screen and (max-width: 450px) {
     .volume-items {
         flex-direction: column;
@@ -93,6 +86,9 @@
     }
 }
 
+
+/* sezione principlae ad 1 colonna per riga, scompare il testo artista
+in riproduzione nella barrra player */
 @media screen and (max-width: 300px) {
     .col-sm {
         flex-basis: 100%;
