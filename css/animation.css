@@ -1,26 +1,36 @@
-.btn:hover {
-    transform: scale(1);
-}
-
-
-.song-bar:hover .play-time, .volume-bar:hover .play-time {
-    background-color: green;
-}
-
-
-.link-menu:hover, a:hover {
-    color: white;
-}
-
 .cards:hover .box-hover {
     display: block;
 }
 
 
 
-/* animazioni per icone */
-.play-bar-icon:hover {
-    transform: scale(1.1);
+.song-bar:hover .play-time, .volume-bar:hover .play-time {
+    background-color: green;
+}
+
+.song-bar:hover .fa-circle {
+    color: green;
+}
+
+.link-menu:hover, a:hover {
+    color: white;
+}
+
+.active-box:hover .active-bar {
+    background-color: green;
+}
+
+
+
+
+
+/*bottoni e icone */
+.btn:hover {
+    transform: scale(1);
+}
+
+.hover-icons:hover .play-bar-icon {
+    transform: scale(1.2);
 }
 
 .fa-heart:hover, .fa-folder:hover {
@@ -33,11 +43,15 @@
 
 
 
-/* animazioni per testi */
+/*testi */
 .played-song-name:hover {
     text-decoration: underline;
 }
 
 h4:hover, div.subtitle:hover {
     text-decoration: underline;
+}
+
+.song-bar:hover .song-time {
+    transform: scale(1.1);
 }

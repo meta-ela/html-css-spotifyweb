@@ -190,12 +190,19 @@ li a, a {
     align-items: center;
     justify-content: center;
     padding: .5rem;
+    position: relative;
 }
 
 .play-time {
     width: 30%;
     height: 100%;
     background-color: var(--bg-color-quintiary);
+}
+
+.dot {
+    position: absolute;
+    bottom: 7px;
+    left: 32%;
 }
 
 .volume-box {
@@ -223,10 +230,6 @@ li a, a {
 .active-bar {
     width: 40px;
     height: 2px;
-}
-
-.active-box:hover .active-bar {
-    background-color: green;
 }
 
 .box-img {
@@ -317,6 +320,10 @@ li a, a {
     color: var(--bg-color-quintiary);
 }
 
+.fa-circle {
+    font-size: 10px;
+}
+
 .played-song-icon {
     flex-direction: row;
     gap: 1rem;
@@ -359,6 +366,10 @@ li a, a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.hover-icons {
+    padding: 0rem .5rem;
 }
 
 
