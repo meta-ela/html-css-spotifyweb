@@ -111,3 +111,12 @@ in riproduzione nella barrra player */
     }
 
 }
+
+
+
+/*far sparire la barra call-to-action */
+@media screen and (max-height: 250px) {
+    .upgrade-bar {
+        display: none;
+    }
+}
